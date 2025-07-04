@@ -1,12 +1,16 @@
 import { useState } from 'react'
 import './App.css'
+import Mainscreen from './pages/Mainscreen'
+import Header from './pages/Header'
+import Sidebar from './pages/Sidebar'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>Hello World!</h1>
+      <Sidebar />
+      <Header />
+      <Mainscreen />
     </>
   )
 }
