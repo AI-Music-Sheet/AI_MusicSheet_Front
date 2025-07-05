@@ -1,3 +1,4 @@
+import { FiLogOut, FiInfo, FiSettings } from 'react-icons/fi';
 import React, { useState } from 'react';
 import '../styles/Sidebar.css';
 
@@ -23,11 +24,18 @@ export default function Sidebar() {
           </div>
           <div className="sidebar-bottom">
             <div className='bottom-left'>
-                <button className="logout">🔄 LogOut</button>
+              <button className="logout">
+                <FiLogOut size={18} />
+                <span>Log Out</span>
+              </button>
             </div>
             <div className='bottom-right'>
-                <div className="icon">ℹ️</div>
-                <div className="icon">⚙️</div>
+              <button className="icon-btn">
+                <FiInfo size={18} />
+              </button>
+              <button className="icon-btn">
+                <FiSettings size={18} />
+              </button>
             </div>
           </div>
         </div>

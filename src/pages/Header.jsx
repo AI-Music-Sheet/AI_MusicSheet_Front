@@ -1,11 +1,12 @@
 import React from 'react';
 import '../styles/Header.css'
+import logo from '../assets/Logo.png'
 
 function Header() {
   return (
     <div className="header">
         <div className="logo">
-          <img src="ai_musicsheet_front\src\assets\AI_Music_Sheet_LOGO.png" alt="logo-img" />
+          <img src={logo} alt="logo-img" />
         </div>
       <div className="auth-buttons">
         <button className='btn'>Log In</button>
