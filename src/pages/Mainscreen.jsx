@@ -14,9 +14,9 @@ function Mainscreen() {
           </div>
           <div className='body-right'>
             <div className="body-sample">대중 출력결과 샘플</div>
-            <button className="start-btn">Start</button>
           </div>
         </div>
+        <button className="start-btn">Start</button>
       </div>
     </div>
     

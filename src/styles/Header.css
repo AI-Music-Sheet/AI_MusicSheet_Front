@@ -5,6 +5,7 @@
   align-items: center;
   border-bottom: 2px solid #eee;
   padding-left: 100px;
+  padding-right: 30px;
   transition: padding-left 0.3s ease; /* ← 부드럽게 이동 */
 }
 

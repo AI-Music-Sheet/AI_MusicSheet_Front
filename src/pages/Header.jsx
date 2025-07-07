@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react';
 import '../styles/Header.css'
 import logo from '../assets/Logo.png'
@@ -6,11 +7,11 @@ function Header() {
   return (
     <div className="header">
         <div className="logo">
-          <img src={logo} alt="logo-img" />
+          <Link to="/"><img src={logo} alt="logo-img" /></Link>
         </div>
       <div className="auth-buttons">
-        <button className='btn'>Log In</button>
-        <button className='btn'>Sign Up</button>
+        <Link to="/login"><button className='btn'>Log In</button></Link>
+        <Link to='/signup'><button className='btn'>Sign Up</button></Link>
       </div>
     </div>
   );
